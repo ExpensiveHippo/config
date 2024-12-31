@@ -16,3 +16,5 @@ opt.wrap = false
 opt.hls = false
 
 opt.undodir = os.getenv("HOMEPATH") .. "/.vim/undo"
+
+opt.termguicolors = true

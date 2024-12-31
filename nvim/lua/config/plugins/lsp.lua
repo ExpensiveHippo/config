@@ -46,6 +46,14 @@ return {
       ensure_installed = {
         "lua_ls",
         "gopls",
+        "cssls",
+        "eslint",
+        "html",
+        "emmet_language_server",
+        "tailwindcss",
+        "ts_ls",
+        "volar",
+        "astro",
       }
     }
 
@@ -82,8 +90,15 @@ return {
       capabilities = capabilities,
     }
 
-    lspconfig.gopls.setup {
-      capabilities = capabilities
-    }
+    lspconfig.gopls.setup { capabilities = capabilities }
+    lspconfig.cssls.setup { capabilities = capabilities }
+    lspconfig.eslint.setup { capabilities = capabilities }
+    lspconfig.html.setup { capabilities = capabilities }
+    lspconfig.emmet_language_server.setup { capabilities = capabilities }
+    lspconfig.tailwindcss.setup { capabilities = capabilities }
+    lspconfig.ts_ls.setup { capabilities = capabilities }
+    lspconfig.volar.setup { capabilities = capabilities }
+    lspconfig.astro.setup { capabilities = capabilities }
+
   end,
 }

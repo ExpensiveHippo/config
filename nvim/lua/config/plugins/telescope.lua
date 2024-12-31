@@ -18,6 +18,11 @@ return {
     local builtin = require('telescope.builtin')
     vim.keymap.set("n", "<space>fh", builtin.help_tags)
     vim.keymap.set("n", "<space>ff", builtin.find_files)
+    vim.keymap.set("n", "<space>fc", function() 
+      builtin.find_files {
+        cwd = vim.fn.stdpath("config")
+      }
+    end)
     vim.keymap.set("n", "<space>lg", builtin.live_grep)
 
   end,
