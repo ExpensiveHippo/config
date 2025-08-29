@@ -7,3 +7,4 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source ~/zsh_functions/fzf-open-file.zsh
+source ~/zsh_functions/ssh-agent-startup.zsh

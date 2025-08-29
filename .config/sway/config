@@ -8,7 +8,7 @@ set $term foot
 set $menu wmenu-run
 
 # OUTPUT
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+exec_always ~/.config/sway/random-bg.sh
 
 # IDLE
 exec swayidle -w \

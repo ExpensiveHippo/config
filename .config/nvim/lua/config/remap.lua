@@ -1,7 +1,5 @@
 local keymap = vim.keymap
 
-vim.g.mapleader = " "
-
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "shift selected lines down in visual mode" })
 keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "shift selected lines up in visual mode" })
 

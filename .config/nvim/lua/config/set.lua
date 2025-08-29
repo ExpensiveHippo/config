@@ -1,11 +1,4 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
 local opt = vim.opt
-local undodir = os.getenv("HOMEPATH") or os.getenv("HOME")
 
 opt.tabstop = 4
 opt.softtabstop = 4
@@ -28,7 +21,7 @@ opt.smartcase = true
 opt.swapfile = false
 opt.backup = false
 opt.undofile = true
-opt.undodir = undodir .. "/.vim/undo"
+opt.undodir = "$HOME/.vim/undo"
 
 
 opt.termguicolors = true
