@@ -21,7 +21,7 @@ opt.smartcase = true
 opt.swapfile = false
 opt.backup = false
 opt.undofile = true
-opt.undodir = "$HOME/.vim/undo"
+opt.undodir = vim.fn.expand("$HOME/.vim/undo")
 
 
 opt.termguicolors = true
