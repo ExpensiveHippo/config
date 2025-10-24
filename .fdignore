@@ -1,0 +1,15 @@
+.git
+.cache
+.zen
+.local
+.oh-my-zsh
+.vim
+.gradle
+.java
+.android
+
+node_modules
+yay
+Android
+StudioProjects
+Google
